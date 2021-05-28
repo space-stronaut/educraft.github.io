@@ -1,0 +1,230 @@
+* {
+  font-family: "Playfair Display";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  transition: all ease-in-out 0.7s;
+  top: 0;
+  width: 100%;
+}
+
+nav .container-fluid {
+  width: 90%;
+  margin: 8px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a.navbar-brand {
+  font-size: 30px;
+  color: #333333;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav a.nav-link {
+  margin: 0 15px;
+  color: #3f3f3f;
+  text-decoration: none;
+}
+
+nav .burger {
+  display: none;
+}
+
+.sticky {
+  background-color: aliceblue;
+  z-index: 2;
+  top: 0;
+}
+
+section.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+}
+
+section.hero h2 {
+  font-size: 65px;
+}
+
+section.hero p.text-muted {
+  font-family: "Rubik";
+}
+
+section.hero button.btn-primary {
+  border: none;
+  padding: 15px 25px;
+  background-color: #e26868;
+  color: white;
+  font-family: "Rubik";
+  margin-top: 20px;
+}
+
+section.hero button.btn-secondary {
+  border: none;
+  padding: 15px 25px;
+  border: 2px solid #e26868;
+  color: #e26868;
+  font-family: "Rubik";
+  margin-top: 20px;
+  margin: 0 20px;
+}
+
+section.hero img {
+  max-width: 50%;
+  animation: float;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+section.fitur h2.text-center {
+  text-align: center;
+  font-size: 30px;
+}
+
+section.fitur .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.fitur .row .col h1.text-primary {
+  font-size: 30px;
+}
+
+section.fitur .row .col p {
+  font-family: "Rubik";
+  line-height: 30px;
+}
+
+section.fitur .row img {
+  max-width: 30%;
+}
+
+section.fitur .reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.fitur .reverse .col h1.text-primary {
+  font-size: 30px;
+}
+
+section.fitur .reverse .col p {
+  font-family: "Rubik";
+  line-height: 30px;
+}
+
+section.fitur .reverse img {
+  max-width: 30%;
+}
+
+@media (max-width: 575.98px) {
+  section.hero {
+    flex-direction: column;
+  }
+  section.hero .primary-text {
+    text-align: center;
+  }
+  section.hero img {
+    display: none;
+  }
+  nav {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+    z-index: 2;
+  }
+  nav .navbar-brand {
+    z-index: 2;
+  }
+  nav .navbar-list {
+    width: 100%;
+    position: relative;
+    background-color: aliceblue;
+    top: -20;
+    height: 50vh;
+    left: 0;
+    transform: translateY(-150%);
+    top: 0;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    transition: all ease-in-out 0.8s;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+    margin: auto;
+  }
+  nav .active {
+    transform: translateY(0);
+    color: white;
+  }
+  nav .active .navbar-brand {
+    color: white;
+  }
+  nav .active i {
+    color: aliceblue;
+  }
+  nav a.nav-link {
+    color: #27a727;
+  }
+  nav .burger {
+    display: block;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 991.98px) {
+  section.hero {
+    flex-direction: column;
+  }
+  section.hero .primary-text {
+    text-align: center;
+  }
+  section.hero img {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
